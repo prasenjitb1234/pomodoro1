@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Pomodoro</div>
+    <div class="buttons">
+      <button id="loginButton">Login</button>
+      <button id="settingsButton">Settings</button>
+    </div>
+  </header>
+
+  <section class="main">
+    <section id="pomodoroTimer">
+      <h2>Pomodoro Timer</h2>
+      <div id="timer">25:00</div>
+      <div id="controls">
+        <button id="startButton">Start</button>
+        <button id="resetButton">Reset</button>
+      </div>
+    </section>
+
+    <!-- to do section  -->
+
+    <section class="to-do">
+      <h2>To-Do List</h2>
+      <div id="taskList">
+        
+      </div>
+      <div id="addTask">
+        <button id="addTaskButton">+</button>
+        <input type="text" id="taskInput" placeholder="Add a task">
+      </div>
+    </section>
+  </section>
+
+
+  
+
+
+
+  <!-- about section  -->
+  <section class="about">
+    <div class="about-description">
+      <h2>About</h2>
+      <p>
+        The Pomodoro Timer is a productivity tool designed to improve focus and productivity. It follows the popular Pomodoro Technique, which involves breaking work into intervals, traditionally 25 minutes in length, separated by short breaks. This technique helps manage time effectively and maintain a balance between work and rest.
+      </p>
+      <p>
+        Our Pomodoro Timer provides a simple and intuitive interface to track your work sessions. You can customize the timer duration according to your preference and receive notifications when each Pomodoro session ends. Stay focused, complete your tasks, and achieve your goals with our Pomodoro Timer.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="yor.png" alt="About Image">
+    </div>
+  </section>
+
+
+
+
+
+  <!-- settings modal  -->
+  <div id="settingsModal" class="modal">
+    <div class="modal-content">
+      <h3>Settings</h3>
+      <label for="timerInput">Timer duration (minutes):</label>
+      <input type="number" id="timerInput" min="1" step="1" value="25">
+      <button id="saveButton">Save</button>
+      <button id="cancelButton">Cancel</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
